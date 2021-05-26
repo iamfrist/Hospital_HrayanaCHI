@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/horiscroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/rno"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom"
+                android:background="@color/colorPrimaryGlass"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/hcf"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorPrimaryGlass"
+                android:gravity="center"
+                android:text="HCF"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/family"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorPrimaryGlass"
+                android:gravity="center"
+                android:text="Family"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2sp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/comor"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorPrimaryGlass"
+                android:gravity="center"
+                android:text="Co-morbidities"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/member"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorPrimaryGlass"
+                android:gravity="center"
+                android:text="Member"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/positive"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#66B2FF"
+                android:gravity="center"
+                android:text="Positive"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2sp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/mild"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FFFF99"
+                android:gravity="center"
+                android:text="Mild"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/mod"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FFB266"
+                android:gravity="center"
+                android:text="Moderate"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/severe"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FF6666"
+                android:gravity="center"
+                android:text="Severe"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</HorizontalScrollView >

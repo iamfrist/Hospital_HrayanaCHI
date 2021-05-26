@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:visibility="invisible"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_name"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"/>
+
+                        <ImageView
+                            android:id="@+id/homeimage"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_baseline_home_24" />
+                    </LinearLayout>
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="New registration"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <!-- <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginBottom="10dp"
+                     android:orientation="horizontal"
+                     android:weightSum="2">
+
+                     <TextView
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp"
+                         android:layout_weight="0.8"
+                         android:gravity="left"
+                         android:text="Registration No. :"
+                         android:textAllCaps="true"
+                         android:textColor="#000"
+                         android:textStyle="bold" />
+
+                     <EditText
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_marginRight="10dp"
+                         android:layout_weight="1.2"
+                         android:background="@drawable/squerbox"
+                         android:gravity="left"
+                         android:hint="REG. NO."
+                         android:paddingLeft="10dp" />
+
+
+                 </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="left"
+                        android:text="Family Name :"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/squerbox"
+                        android:gravity="left"
+                        android:hint="NAME"
+                        android:inputType="textCapCharacters"
+                        android:paddingLeft="10dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="left|center"
+                        android:text="No. of Family \nMembers :"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/fno"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/squerbox"
+                        android:gravity="left"
+                        android:hint="MEMBERS"
+                        android:textAllCaps="true"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="left"
+                        android:text="No. of person \nwith Comorbidities :"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <!-- <TextView
+                         android:id="@+id/comorbidities"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1.2"
+                         android:layout_marginRight="10dp"
+                         android:background="@drawable/squerbox"
+                         android:gravity="left"
+                         android:layout_gravity="center"
+                         android:paddingLeft="10dp"
+                         android:hint="COMORBIDITIES"
+                         android:inputType="number"
+                         android:maxLength="2" />-->
+                    <EditText
+                        android:id="@+id/nocomo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/squerbox"
+                        android:gravity="left"
+                        android:textAllCaps="true"
+                        android:hint="COMORBIDITIES"
+
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="left"
+                        android:text="No. of covid \nPositive Members :"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/pno"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/squerbox"
+                        android:gravity="left"
+                        android:textAllCaps="true"
+                        android:hint="POSITIVE MEMBERS"
+
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="left"
+                        android:text="Address :"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/squerbox"
+                        android:gravity="left"
+                        android:hint="ADDRESS"
+                        android:textAllCaps="true"
+                        android:inputType="textCapCharacters"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="left"
+                        android:text="City :"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/squerbox"
+                        android:gravity="left"
+                        android:hint="CITY"
+                        android:inputType="textCapCharacters"
+                        android:paddingLeft="10dp"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="left"
+                        android:text="State :"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/state"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/squerbox"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="HARYANA"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="left"
+                        android:text="Mobile No:"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/squerbox"
+                        android:gravity="left"
+                        android:hint="MOBILE"
+                        android:textAllCaps="true"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="left"
+                        android:text="PASSWORD:"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/squerbox"
+                        android:gravity="left"
+                        android:hint="PASSWORD"
+                        android:inputType="number"
+                        android:textAllCaps="true"
+                        android:maxLength="6"
+                        android:paddingLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="left"
+                        android:text="district :"
+                        android:textAllCaps="true"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/squerbox">
+
+                        <Spinner
+                            android:id="@+id/disspinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:inputType="textCapCharacters"
+                            android:textAllCaps="true"
+                            android:layout_marginRight="10dp"></Spinner>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="left"
+                        android:text="HCF :"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/squerbox">
+
+                        <Spinner
+                            android:id="@+id/chcspinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:textAllCaps="true"
+                            android:inputType="textCapCharacters"
+                            android:layout_marginRight="10dp"></Spinner>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.8"
+                        android:gravity="left"
+                        android:text="PHC :"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/squerbox">
+
+                        <Spinner
+                            android:id="@+id/phcspinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:textAllCaps="true"
+                            android:inputType="textCapCharacters"
+                            android:layout_marginRight="10dp"></Spinner>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="70dp"
+                    android:text="register" />
+
+
+                <TextView
+                    android:id="@+id/regTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="registration successful"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/addbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="70dp"
+                    android:text="add patient" />
+
+                <Button
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="70dp"
+                    android:text="home"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/dprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="70dp"
+                    android:text="home"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
